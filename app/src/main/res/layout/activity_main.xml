@@ -12,64 +12,89 @@
         android:text="Valor 1:" />
 
     <EditText
-        android:id="@+id/input_numbers_1"
+        android:id="@+id/input_number_1"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:hint="0"
+        android:ems="10"
         android:inputType="numberDecimal|number|numberSigned"
-        android:layout_below="@id/value_1"/>
+        android:layout_below="@id/value_1"
+        />
     <TextView
         android:id="@+id/value_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_below="@id/input_numbers_1"
+        android:layout_below="@id/input_number_1"
         android:text="Valor 2:" />
 
     <EditText
-        android:id="@+id/input_numbers_2"
+        android:id="@+id/input_number_2"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:hint="0"
+        android:ems="10"
         android:inputType="numberDecimal|number|numberSigned"
         android:layout_below="@id/value_2"/>
+
     <Button
         android:id="@+id/operation_plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/input_numbers_2"
+        android:layout_below="@id/input_number_2"
         android:layout_marginTop="32dp"
-        android:text="+"/>
+        android:text="+"
+        android:onClick="add"
+        />
 
     <Button
         android:id="@+id/operation_minus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/input_numbers_2"
+        android:layout_below="@id/input_number_2"
         android:layout_toRightOf="@id/operation_plus"
         android:layout_marginTop="32dp"
-        android:text="-"/>
+        android:text="-"
+        android:onClick="sub"/>
 
     <Button
         android:id="@+id/operation_times"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/input_numbers_2"
+        android:layout_below="@id/input_number_2"
         android:layout_toRightOf="@id/operation_minus"
         android:layout_marginTop="32dp"
-
+        android:onClick="mul"
         android:text="*"/>
 
     <Button
         android:id="@+id/operation_division"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/input_numbers_2"
+        android:layout_below="@id/input_number_2"
         android:layout_toRightOf="@id/operation_times"
         android:layout_marginTop="32dp"
+        android:text="/"
+        android:onClick="div"/>
 
-        android:text="/"/>
 
+    <TextView
+        android:id="@+id/result_is"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp"
+        android:layout_centerHorizontal="true"
+        android:text="O Resultado é:"/>
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text=""
+        />
 
 
 
