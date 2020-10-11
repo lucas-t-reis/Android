@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp">
+
+    <TextView
+        android:id="@+id/report_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:text="Relatório Nutricional"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:textSize="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/report_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Nome:"
+        android:textStyle="bold"
+        android:layout_below="@id/report_title"
+        />
+    <TextView
+    android:id="@+id/report_name_val"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:text=""
+    android:layout_below="@id/report_title"
+    android:layout_toRightOf="@id/report_name"
+    />
+
+    <TextView
+        android:id="@+id/report_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Idade:"
+        android:textStyle="bold"
+        android:layout_below="@id/report_name"
+        />
+    <TextView
+        android:id="@+id/report_age_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text=""
+        android:layout_below="@id/report_name"
+        android:layout_toRightOf="@id/report_age"
+        />
+
+
+    <TextView
+        android:id="@+id/report_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Peso:"
+        android:textStyle="bold"
+        android:layout_below="@id/report_age"
+        />
+    <TextView
+        android:id="@+id/report_weight_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text=""
+        android:layout_below="@id/report_age"
+        android:layout_toRightOf="@id/report_weight"
+        />
+
+
+    <TextView
+        android:id="@+id/report_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Altura:"
+        android:textStyle="bold"
+        android:layout_below="@id/report_weight"
+        />
+    <TextView
+        android:id="@+id/report_height_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text=""
+        android:layout_below="@id/report_weight"
+        android:layout_toRightOf="@id/report_height"
+        />
+
+
+    <TextView
+        android:id="@+id/report_IMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="IMC:"
+        android:textStyle="bold"
+        android:layout_below="@id/report_height"
+        />
+    <TextView
+        android:id="@+id/report_IMC_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text=""
+        android:layout_below="@id/report_height"
+        android:layout_toRightOf="@id/report_IMC"
+        />
+
+
+    <TextView
+        android:id="@+id/report_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Classificação:"
+        android:textStyle="bold"
+        android:layout_below="@id/report_IMC"
+        />
+    <TextView
+        android:id="@+id/report_class_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text=""
+        android:layout_below="@id/report_IMC"
+        android:layout_toRightOf="@id/report_class"
+        />
+
+
+</RelativeLayout>

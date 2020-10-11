@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"/>
+    <EditText
+        android:id="@+id/nameBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/ageTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameBox"
+        android:text="Idade"/>
+    <EditText
+        android:id="@+id/ageBox"
+        android:ems="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageTxt"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/weightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameBox"
+        android:layout_toRightOf="@id/ageTxt"
+        android:layout_marginLeft="50dp"
+        android:text="Peso(kg)"/>
+    <EditText
+        android:id="@+id/weightBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/weightText"
+        android:layout_toRightOf="@id/ageBox"
+        android:ems="2"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:id="@+id/heightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameBox"
+        android:layout_toRightOf="@id/weightText"
+        android:layout_marginLeft="50dp"
+        android:text="Altura(m)"
+        />
+    <EditText
+        android:id="@+id/heightBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heightText"
+        android:layout_toRightOf="@id/weightBox"
+        android:layout_marginLeft="50dp"
+        android:ems="3"
+        android:inputType="numberDecimal"
+        />
+
+
+    <Button
+        android:id="@+id/reportBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Relatório Nutricional"
+        android:onClick="goToReport"/>
+
+    <TextView
+        android:id="@+id/errorMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="20dp"
+        android:text=""
+        android:textAlignment="center"
+        android:layout_below="@id/reportBtn"
+
+        />
+
+
+</RelativeLayout>
