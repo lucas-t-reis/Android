@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyLocations</string>
+    <string name="hometown_lat">-21.3820984</string>
+    <string name="hometown_lng">-42.7072264</string>
+    <string name="currentCity_lat">-20.755880</string>
+    <string name="currentCity_lng">-42.883492</string>
+    <string name="department_lat">-20.764366</string>
+    <string name="department_lng">-42.868260</string>
+</resources>
