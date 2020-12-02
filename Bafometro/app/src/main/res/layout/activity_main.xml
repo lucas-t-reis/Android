@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Peso -->
+    <TextView
+        android:id="@+id/pesoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/pesoIn"
+        android:layout_alignBaseline="@id/pesoIn"
+
+        android:padding="4dp"
+        android:textSize="16dp"
+        android:text="Peso:" />
+    <EditText
+        android:id="@+id/pesoIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+
+        android:inputType="numberDecimal"
+        android:minEms="6"/>
+    <!-- Sexo -->
+    <TextView
+        android:id="@+id/sexoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/sexoIn"
+        android:layout_alignBaseline="@id/sexoIn"
+
+        android:padding="4dp"
+        android:textSize="16dp"
+        android:text="Sexp (m /f):" />
+    <EditText
+        android:id="@+id/sexoIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pesoIn"
+        android:minEms="6"/>
+    <!-- Copos -->
+    <TextView
+        android:id="@+id/coposTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/coposIn"
+        android:layout_alignBaseline="@id/coposIn"
+
+        android:padding="4dp"
+
+        android:textSize="16dp"
+        android:text="N° copos:" />
+    <EditText
+        android:id="@+id/coposIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sexoIn"
+
+        android:inputType="numberDecimal"
+        android:minEms="6"/>
+    <!-- Jejum -->
+    <TextView
+        android:id="@+id/jejumTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/jejumIn"
+        android:layout_alignBaseline="@id/jejumIn"
+
+        android:padding="4dp"
+        android:textSize="16dp"
+        android:text="Está de jejum?\n(s/n)" />
+    <EditText
+        android:id="@+id/jejumIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/coposIn"
+        android:minEms="6"/>
+
+
+    <!-- Enviar dados -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="300dp"
+        android:text="Enviar Dados"
+        android:onClick="sendData"/>
+
+</RelativeLayout>
