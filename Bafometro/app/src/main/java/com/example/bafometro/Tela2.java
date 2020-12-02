@@ -31,11 +31,11 @@ public class Tela2 extends AppCompatActivity {
         double alcohol = glasses*4.8;
         double coef = 0;
 
-        if(fasting.equals("s")) coef = 1.1;
+        if(fasting.equals("n")) coef = 1.1;
         else if(sex.equals("m")) coef = 0.7;
         else coef = 0.6;
 
-        double bloodAlcohol = alcohol / weight*coef;
+        double bloodAlcohol = alcohol / (weight*coef);
 
         it = new Intent(getApplicationContext(), MainActivity.class);
         it.putExtra("results", bloodAlcohol);
