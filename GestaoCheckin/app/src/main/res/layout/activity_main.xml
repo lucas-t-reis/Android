@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- PLACE NAME -->
+    <TextView
+        android:id="@+id/text_placeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do local:"/>
+    <AutoCompleteTextView
+        android:id="@+id/input_placeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_placeName"/>
+
+    <!-- SPINNER -->
+    <TextView
+        android:id="@+id/text_placeCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_placeName"
+        android:text="Categoria do Local:"/>
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_placeCategory" />
+
+    <TextView
+        android:id="@+id/text_globalPos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spinner_category"
+        android:text="Posicionamento Global"/>
+    <!-- LAT/LNG vals -->
+    <TextView
+        android:id="@+id/text_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_globalPos"
+        android:text="Latitude:\t"/>
+    <TextView
+        android:id="@+id/text_lng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_lat"
+        android:text="Longitude:\t"/>
+
+    <!-- CHECK-IN -->
+    <Button
+        android:id="@+id/btn_checkIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/text_lng"
+        android:padding="20dp"
+        android:text="CHECK-IN"
+        android:onClick="checkIn"/>
+
+
+
+
+
+</RelativeLayout>

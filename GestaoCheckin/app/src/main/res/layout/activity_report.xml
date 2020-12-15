@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".ReportActivity">
+
+    <TextView
+        android:id="@+id/text_report_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Locais Mais Visitados"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/text_report_place_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_report_title"
+        android:text="LOCAL"/>
+    <TextView
+        android:id="@+id/text_report_nVisits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/text_report_title"
+        android:text="VISITAS"/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@id/text_report_place_header">
+        <ListView
+            android:id="@+id/list_places"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/text_report_place_header"/>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
